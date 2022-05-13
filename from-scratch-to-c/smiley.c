@@ -5,21 +5,27 @@ int main(void) {
     // declare reps variable
     int reps;
 
-    // prompt user to input amount:
+    // prompt user to input positive num:
     do
     {
         reps = get_int("Input your 🙂-square size: ");
     }
     while (reps < 1);
    
-    // print 🙂s on the console a number of times (in a row):
+    // print 🙂 to console reps times:
     for (int i = 0; i < reps; i++) {
 
-        // print columns:
-        for (int j = 0; j < reps; j++) {
-            printf("🙂 ");
+        // print spaces for each row(dependant on reps):
+          for (int k = i; k < (reps - 1); k++) {
+            printf(" ");
         }
-        // next row:
+
+        // print columns:
+        for (int j = 0; j <= i; j++) {
+
+            printf("🙂");
+        }
+        // move to next row:
         printf("\n");
     }
 }
