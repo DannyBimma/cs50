@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <cs50.h>
 
-int main(void) {
+int main(void) 
+{
     // store points threshold in constant variable:
     const int threshold = 2;
 
@@ -9,11 +10,16 @@ int main(void) {
     int points = get_int("How many points did you lose? ");
 
     // conditionally log msg to console based on user's points:
-    if (points < threshold) {
+    if (points < threshold) 
+    {
         printf("If you keep this up you'll be a tech billionare someday 💵 !!\n");
-    } else if (points > threshold) {
+    } 
+    else if (points > threshold) 
+    {
         printf("A few mistakes made are a few lessons learned... keep on coding 👨🏽‍💻 !!\n");
-    } else {
+    } 
+    else 
+    {
         printf("Just a couple mistakes... but still on track to becoming a tech billionaire 💵 !!\n");
     }
 }
